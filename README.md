@@ -2,7 +2,7 @@
 
 ( https://react-cart-git-master-swetajaiswal9.vercel.app/ )
 
-Single Page Cart app using REACT JS
+Single Page Cart app using ReactJS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
