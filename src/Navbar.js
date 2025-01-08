@@ -28,15 +28,15 @@ const styles = {
       fontSize: 40,
       color: '#ec4747',
       fontFamily: 'sans-serif',
-      marginRight: 1220,
-      fontWeight: 800
+      fontWeight: 800,
+      marginLeft: 10
     },
 
     nav: {
       height: 75,
       background: 'black',
       display: 'flex',
-      justifyContent: 'flex-end',
+      justifyContent: 'space-between',
       alignItems: 'center'
     },
 

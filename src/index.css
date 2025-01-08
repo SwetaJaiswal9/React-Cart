@@ -30,7 +30,30 @@ body {
   cursor: pointer;
 }
 
-.cart{
+.cart {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Navbar {
+  flex: 0;
+  position: sticky;
+  top: 0;
+}
+
+.cart-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.total-container {
+  padding: 8px;
+  background: yellow;
+  font-weight: bold;
+  font-size: 25px;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
 }
