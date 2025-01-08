@@ -33,8 +33,9 @@ body {
 .cart {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
+  flex: 1; 
 }
 
 .Navbar {
@@ -46,6 +47,9 @@ body {
 .cart-container {
   flex: 1;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 75px);
 }
 
 .total-container {
@@ -56,4 +60,5 @@ body {
   position: sticky;
   bottom: 0;
   z-index: 10;
+  margin-top: auto;
 }
