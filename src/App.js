@@ -1,7 +1,10 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import Cart from "./Cart";
 import Navbar from "./Navbar";
 import { db } from "./firebase";
+
+// const Cart = lazy(() => import("./Cart"));
+// const Navbar = lazy(() => import("./Navbar"));
 
 class App extends React.Component {
   constructor() {
@@ -182,6 +185,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        {/* <Suspense fallback ={<h1>Loading components...</h1>}> */}
         <div className="Navbar">
           <Navbar count={this.getCartCount()} />
         </div>
@@ -260,13 +264,18 @@ class App extends React.Component {
         </button>
 
         <div className="cart-container">
-          <Cart
-            products={products}
-            onIncreaseQuantity={this.handleIncreaseQuantity}
-            onDecreaseQuantity={this.handleDecreaseQuantity}
-            onDeleteProduct={this.handleDeleteProduct}
-          />
+          {/* {loading ? (
+            <h1>Loading...</h1>
+          ) : ( */}
+            <Cart
+              products={products}
+              onIncreaseQuantity={this.handleIncreaseQuantity}
+              onDecreaseQuantity={this.handleDecreaseQuantity}
+              onDeleteProduct={this.handleDeleteProduct}
+            />
+          {/* )}  */}
         </div>
+        {/* </Suspense> */}
 
         {loading && <h1>Loading...</h1>}
 

@@ -46,10 +46,10 @@ body {
 
 .cart-container {
   flex: 1;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 75px);
+  min-height: calc(100vh - 186px);
+  overflow-y: auto;
 }
 
 .total-container {

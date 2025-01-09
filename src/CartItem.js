@@ -2,6 +2,8 @@ import React from 'react';
 import { MdDelete } from "react-icons/md";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { AiOutlineMinusCircle } from "react-icons/ai";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const CartItem = (props) => {
         
@@ -13,7 +15,7 @@ const CartItem = (props) => {
         <div className='cart-item'> 
         
             <div className='left-block'>
-                <img style={styles.image} src={product.img}/>
+                <LazyLoadImage style={styles.image} src={product.img} effect='blur'/>
             </div>
 
             <div className='right-block'>
