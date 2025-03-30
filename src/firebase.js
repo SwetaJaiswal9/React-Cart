@@ -15,7 +15,7 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
 
-db.enablePersistence()
+db.enablePersistence({ synchronizeTabs: true })
   .then(() => {
     console.log("Offline persistence enabled");
   })
